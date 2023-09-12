@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fab Courier services</title>
+    <link
+      rel="shortcut icon"
+      href="img/Testimonial/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="/Fab Trans/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+  </head>
+
+  <body>
+    <nav class="" data-header="">
+      <div>
+        <a href="" class="logo">
+          <h1>Fab<span>Trans</span></h1>
+        </a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Our services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#findus">Find us</a></li>
+        </ul>
+      </div>
+      <div>
+        <a class="btn" id="myBtn" onclick="document.getElementById('id01').style.display='block'">Book now</a>
+      </div>
+    </nav>
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="#service">Our services</a>
+      <a href="#contact"> Contact Us</a>
+      <a href="#findus">Find us</a>
+    </div>
+
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+   <i class="fa fa-solid fa-bars menu" onclick="openNav()"></i>
+
+
+   <div class="modal" id="id01">
+    <div class="modal-box animate">
+      <h1>Courier Request Form</h1>
+      <i class="fa fa-solid fa-remove fa-2x" onclick="document.getElementById('id01').style.display='none'"
+        class="close"
+        title="Close Modal"></i>
+      <form action="" class="parent">
+        <div class="father">
+          <div class="child">
+                  <label for="Requester">Requester</label>
+                  <input type="text" name="Requester">
+                  <label for="first" class="small">First name</label>
+
+          </div>
+          <div class="child">
+                  <input type="text" name="Requester">
+                  <label for="first" class="small">Last name</label>
+          </div>
+        </div>
+
+        <div class="father">
+          <div class="child">
+                  <label for="Requester">FAO</label>
+                  <input type="text" name="receiver">
+                  <label for="first" class="small">First name</label>
+
+          </div>
+          <div class="child">
+                  <input type="text" name="receiver">
+                  <label for="first" class="small">Last name</label>
+          </div>
+        </div>
+
+        <div class="father">
+          <div class="child">
+                  <label for="contactno">Contact No</label>
+                  <input type="text" name="contactno" placeholder="(000) 0000-000">
+
+          </div>
+          <div class="child">
+                  <label for="deliverydate" class="">Desired Delivery Date</label>
+                  <input type="date" name="deliverydate">
+                  <label for="first" class="small">Date</label>
+          </div>
+        </div>
+      
+         <div class="father">
+          <div class="child">
+                  <label for="AN No">AN no</label>
+                  <input type="text" name="AN no">
+          </div>
+
+          <div class="child">
+                <label for="Customs/Carriage/Contents Value">Customs/Carriage/Contents Value</label>
+                  <input type="text" name="Customs/Carriage/Contents Value">
+          </div>
+        </div>
+
+        <div class="normal">
+          <label for="Shipping Address">Shipping Address</label>
+          <input type="text" name="Shipping Address">
+          <label for="Shipping Address" class="small margin">Street Address</label>
+          <br>
+          <br>
+            <input type="text" name="shipping Address">
+          <label for="shipping Address" class="small margin">Street Address Line 2</label>
+        </div>
+          <br>
+        <div class="father">
+          <div class="child">
+               <input type="text" name="city">
+          <label for="city" class="small">city</label>
+          </div>
+          <div class="child">
+               <input type="text" name="state">
+          <label for="state" class="small">State / Province / Country </label>
+          </div>
+        </div>
+
+      <!--Test Area  -->
+        <div>
+          <label for="textarea">Description of goods (Please enter part number and description from Netsuite if available, as well as what the item is/what it does/what it's used for)</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="father">
+          <div class="child">
+            <label for="Package Weight (KG)">Package Weight (KG)</label>
+            <input type="text" name="Package Weight (KG)" id="">
+          </div>
+          <div class="child">
+            <label for="Package Dimensions (CM)">Package Dimensions (CM)</label>
+            <input type="text" name="Package Dimensions (CM)" id="">
+          </div>
+        </div>
+
+        <div class="father">
+          <div class="child">
+            <label for="Department Code">Department Code</label>
+            <input type="text" name="Department Code" id="">
+          </div>
+          <div class="child">
+            <label for="Harmonised Tax Code (ROW Only)">Harmonised Tax Code (ROW Only)</label>
+            <input type="text" name="Harmonised Tax Code (ROW Only)" id="">
+          </div>
+        </div>
+
+        <div class="father">
+          <div class="child">
+            <label for="Number of boxes">Number of boxes</label>
+            <input type="number" name="Number of boxes" id="" placeholder="eg3">
+          </div>
+          <div class="child">
+            <label for="Number of items per box (ROW Only)">Number of items per box (ROW Only)</label>
+            <input type="text" name="Number of items per box (ROW Only)" id="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            
+        <h3>Does your item contain:</h3>
+       <select name="Contains" id="">
+        <option value="Laptop">Laptop</option>
+        <option value="Mobile">Mobile Phone</option>
+        <option value="Battery">Battery</option>
+       </select>
+          </div>
+          <div class="col-2">
+            
+        <h3>Your Plan:</h3>
+       <select name="Plan" id="">
+        <option value="BUSINESS ">BUSINESS </option>
+        <option value="STATEWIDE ">STATEWIDE  </option>
+        <option value="PERSONAL ">PERSONAL </option>
+       </select>
+          </div>
+        </div>
+
+       <br>
+       <button class="btn">Submit &rightsquigarrow;</button>
+      </form>
+    </div>
+   </div>
+
+    <section class="min-height">
+      <div class="row">
+        <div class="col-2">
+          <h1><span>A trusted provider of</span> courier services.</h1>
+          <br />
+          <p>
+            We deliver your products safely to <br />
+            your home in a reasonable time.
+          </p>
+          <br /><br />
+          <a href="" class="btn">Get Started</a>
+        </div>
+        <div class="col-2">
+          <img src="img/illustrations/hero.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <h2>Services</h2>
+      <h1 class="title">Our services for you</h1>
+      <br />
+      <div class="row2">
+        <div class="col-3">
+          <div class="img-con">
+            <img src="img/icons/services-1.svg" alt="" />
+          </div>
+          <h2>Business Services</h2>
+          <br />
+          <p>
+            Offering home delivery around the city, where your products will be
+            at your doorstep within 48-72 hours.
+          </p>
+          <br />
+          <ul>
+            <li>Corporate goods</li>
+            <li>Shipment</li>
+            <li>Accesories</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="img-con">
+            <img src="img/icons/services-2.svg" alt="" />
+          </div>
+          <h2>Statewide Services</h2>
+          <br />
+          <p>
+            Offering home delivery around the city, where your products will be
+            at your doorstep within 48-72 hours.
+          </p>
+          <br />
+          <ul>
+            <li>Unlimited Bandwidth</li>
+            <li>Encrypted Connection</li>
+            <li>Yes Traffic Logs</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <div class="img-con">
+            <img src="img/icons/services-1.svg" alt="" />
+          </div>
+          <h2>Personal Services</h2>
+          <br />
+          <p>
+            You can trust us to safely deliver your most sensitive documents to
+            the specific area in a short time.
+          </p>
+          <br />
+          <ul>
+            <li>Corporate goods</li>
+            <li>Shipment</li>
+            <li>Accesories</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="awards row2">
+      <div class="award">
+        <div class="img-con"><img src="img/icons/awards.png" alt="" /></div>
+        <h2>26+</h2>
+        <h3>Awards won</h3>
+      </div>
+      <div class="award">
+        <div class="img-con"><img src="img/icons/states.png" alt="" /></div>
+        <h2>65+</h2>
+        <h3>States covered</h3>
+      </div>
+      <div class="award">
+        <div class="img-con"><img src="img/icons/clients.png" alt="" /></div>
+        <h2>689K+</h2>
+        <h3>Happy clients</h3>
+      </div>
+      <div class="award">
+        <div class="img-con"><img src="img/icons/goods.png" alt="" /></div>
+        <h2>130M+</h2>
+        <h3>Goods delivered</h3>
+      </div>
+      <div class="award">
+        <div class="img-con"><img src="img/icons/business.png" alt="" /></div>
+        <h2>130M+</h2>
+        <h3>Business hours</h3>
+      </div>
+    </section>
+
+    <section class="bg-con">
+      <section class="bg">
+        <h2>Fastest delivery</h2>
+        <p>
+          You can get your valuable item in the fastest period <br />
+          of time with safety.Because your emergency is <br />
+          our first priority
+        </p>
+      </section>
+    </section>
+
+    <section class="testimonial">
+      <h2>TESTIMONIAL</h2>
+      <h1 class="title">Our awesome clients</h1>
+        <body>
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <h2>Fanatasic service</h2>
+                  <p>
+                 "FabTrans is a game-changer for small businesses like mine. They understand the importance of timely deliveries and offer cost-effective solutions. FabTrans has become an essential part of my operations, and I'm grateful for their reliability and support."
+                  </p>
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="col-2 row">
+                      <div>
+                      <img src="img/Testimonial/swapnil-dwivedi-N2IJ31xZ_ks-unsplash.jpg" alt="">
+                      </div>
+                      <div>
+                      <h4>Robert Jackson</h4>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+               <li class="splide__slide">
+                  <h2>Fanatasic service</h2>
+                  <p>
+"FabTrans has been my courier service of choice for years. Their commitment to reliability and efficiency is unmatched. Whether it's a rush delivery or a package across the country, they handle it with care and precision. I trust FabTrans with all my shipping needs."                  </p>
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="col-2 row">
+                      <div>
+                      <img src="img/Testimonial/airiz-cw_NGGZCCCE-unsplash.jpg" alt="">
+                      </div>
+                      <div>
+                      <h4> Sarah Thompson</h4>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+               <li class="splide__slide">
+                  <h2>Fanatasic service</h2>
+                  <p>
+                    "I've had the pleasure of working with FabTrans, and they consistently deliver excellence. Their responsive customer service, timely deliveries, and competitive rates make them a standout in the courier industry. FabTrans is the partner you can rely on."
+                  </p>
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="col-2 row">
+                      <div>
+                      <img src="img/Testimonial/omid-armin-a7itXABwl8U-unsplash.jpg" alt="">
+                      </div>
+                      <div>
+                      <h4> Michael Rodriguez</h4>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+               <li class="splide__slide">
+                  <h2>Fanatasic service</h2>
+                  <p>
+                   "FabTrans is a lifesaver for my business. Their dedication to secure and on-time deliveries has helped me build trust with my clients. The peace of mind I get from using FabTrans is invaluable, and I couldn't recommend them enough."
+                  </p>
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="col-2 row">
+                      <div>
+                      <img src="img/Testimonial/darran-shen-Q_oXnBhxVu0-unsplash.jpg" alt="">
+                      </div>
+                      <div>
+                      <h4> Emily Patel</h4>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+               <li class="splide__slide">
+                  <h2>Fanatasic service</h2>
+                  <p>
+                   "FabTrans has made shipping hassle-free for me. Their professionalism and attention to detail are evident in every interaction. I appreciate their commitment to eco-friendly practices and the environment. FabTrans truly cares about its customers and the planet."
+                  </p>
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="col-2 row">
+                      <div>
+                      <img src="img/Testimonial/mohammad-faruque-SpIKPT8zeAs-unsplash.jpg" alt="">
+                      </div>
+                      <div>
+                      <h4> David Wilson</h4>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <h2>Fanatasic service</h2>
+                  <p>
+                  "FabTrans has simplified my life. Their user-friendly platform and quick pickups have saved me time and energy. With FabTrans, I know my packages are in good hands, and their courteous staff goes above and beyond to ensure a smooth delivery experience."
+                  </p>
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="col-2 row">
+                      <div>
+                      <img src="img/Testimonial/jassir-jonis-v26vu43kZkw-unsplash.jpg" alt="">
+                      </div>
+                      <div>
+                      <h4>Maria Garcia</h4>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Add more slides as needed -->
+              </ul>
+            </div>
+          </div>
+
+    </section>
+
+    <section class="cta" id="contact"> 
+      <div class="row width">
+        <div class="col-2">
+          <div class="img-holder">
+          <img src="img/illustrations/callback.png" alt="">
+          </div>
+          <h2>REQUEST A CALLBACK</h2>
+          <h1>We will contact in the shortest time.</h1>
+          <p>Monday to Friday, 9am-5pm.</p>
+        </div>
+        <div class="col-2">
+          <form action="">
+            <input type="text" placeholder="Name">
+            <input type="email" name="" id="" placeholder="Email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button type="submit">Send Message <i class="fa fa-send"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="findus" id="findus">
+      <h2>find us</h2>
+      <h1 class="title">Access us easily</h1><br>
+      <div class="row2">
+        <div class="box">
+          <img src="img/icons/wired-outline-18-location-pin.gif" alt="">
+          <h3>277 Lorem Ave, San Diego, CA 22553</h3>
+        </div>
+        <div class="box">
+          <img src="img/icons/wired-outline-45-clock-time.gif" alt="">
+          <h3>Monday - Friday: 10 am - 10pm
+              Sunday: 11 am - 9pm</h3>
+        </div>
+        <div class="box">
+          <img src="img/icons/wired-outline-177-envelope-mail-send.gif" alt="">
+          <h3><a href="mailto:"> info@quriarbox.com</a></h3>
+        </div>
+      </div>
+      <br>
+      <button class="btn">Call us to delivery <a href="tel:+234590585755">+234590585755</a></button>
+    </section>
+
+    <footer>
+      <div class="row">
+        <h5>&star; All rights Reserved © FabTrans, 2023</h5>
+        <h5>&checkmark; Made with <i class="fa fa-heart"> </i> by <a href="https://bit.ly/DivineEde" target="_blank">Deo</a></h5>
+      </div>
+    </footer>
+  </body>
+
+  <script src="app.js"></script>
+  <!-- Include Splide JavaScript file -->
+  <script src="/Fab Trans/@splidejs/splide/dist/js/splide.min.js"></script>
+</html>
